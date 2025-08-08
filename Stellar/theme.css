@@ -232,7 +232,6 @@
 	--text-muted: var(--translucent-icon-color);
 	--leaflet-borders: #ffffff1a;
 	--leaflet-buttons: var(--bg-color);
-	--background-modifier-message: var(--bg-color);
 
 	/* settings */
 	--max-width: 88%;
@@ -524,22 +523,6 @@ body:not(.sidebar-tabs-underline):not(.sidebar-tabs-index):not(.sidebar-tabs-squ
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-}
-
-div.notice{
-	border: 1px solid var(--light-blue) !important;
-}
-
-a{
-	text-decoration: underline !important;
-	color: inherit !important;
-	text-decoration-color: var(--TEAL) !important;
-	background-image: none !important;
-	padding: 0% !important;
-}
-
-a:hover{
-	text-decoration-color: var(--light-blue) !important;
 }
 
 /* .theme-light {
