@@ -106,7 +106,7 @@
 	/* stellar-def-color */
 	--bg-color: #25405B;
 	--active-bg-color:#00689A33;
-	--highlight-color: #00527AB3;
+	--highlight-color: #00527ab3;
 	--white-blue: #c9fdff;
 	--lighter-blue: #8DE8ED;
 	--light-blue: #00ccff;
@@ -120,6 +120,7 @@
 	--translucent-white: #ffffffa8;
 	--text-color: #C6D0F5;
 	--quit-color: #fc635542;
+	--highlight-quit-color: #fc635563;
 	--stellar-tab-text-color: var(--translucent-icon-color);
 	--stellar-tab-text-color-active: var(--BLUE_B);
 
@@ -179,8 +180,6 @@
 	--nav-indentation-guide-color: var(--translucent-dark-blue);
 	--nav-collapse-icon-color: var(--translucent-dark-blue);
 	--nav-collapse-icon-color-collapsed: var(--translucent-dark-blue);
-	--slider-thumb-border-color: var(--light-blue);
-	--slider-track-background: var(--lighter-blue);
 	--tab-background-active: var(--highlight-color);
 	--tab-text-color: var(--translucent-icon-color);
 	--tab-text-color-hover: var(--BLUE_B);
@@ -227,12 +226,14 @@
 	--outline-heading-weight-active: var(--light-blue); */
 	--text-highlight-bg: var(--translucent-dark-blue);
 	--background-modifier-hover: var(--active-bg-color);
+	--background-modifier-error: var(--quit-color);
+	--background-modifier-message: var(--bg-color);
 	--titlebar-text-color: var(--translucent-icon-color);
 	--titlebar-text-color-focused: var(--translucent-icon-color);
+	--text-on-accent: var(--text-color);
 	--text-muted: var(--translucent-icon-color);
 	--leaflet-borders: #ffffff1a;
 	--leaflet-buttons: var(--bg-color);
-	--background-modifier-message: var(--bg-color);
 
 	/* settings */
 	--max-width: 88%;
@@ -245,6 +246,7 @@
 	--list-spacing: 0.075em;
 	--tag-padding-y: 0.2em;
 	--input-shadow: 0 0 0 1px var(--translucent-dark-blue);
+	--input-shadow-hover: inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d, 0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
 	--file-header-font-size: 13px;
 	--file-header-font-weight: 400;
 	--font-adaptive-normal: 16px;
@@ -342,16 +344,39 @@ body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
 	padding: var(--file-margins);
 }
 
-.checkbox-container input[type='checkbox'] {
-    background-color: var(--bg-color);
-}
-
-.checkbox-container{
-	background-color: var(--darker-blue);
+/* checkbox */
+.checkbox-container {
+	box-shadow: var(--input-shadow);
+	background-color: var(--dark-blue);
 }
 
 .checkbox-container.is-enabled{
-	background-color: var(--light-blue);
+	box-shadow: var(--input-shadow);
+	background-color: var(--BLUE_E);
+}
+
+.checkbox-container:hover {
+	box-shadow: var(--input-shadow-hover);
+}
+
+.checkbox-container:after {
+    background-color: var(--light-blue);
+}
+/* checkbox_end */
+
+/* slider */
+.slider{
+	box-shadow: var(--input-shadow) !important;
+	background-color: var(--active-bg-color) !important;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+	box-shadow: var(--input-shadow);
+	background: var(--light-blue);
+}
+
+input[type="range"] {
+	background: var(--light-blue) ;
 }
 
 .cm-line{
@@ -422,10 +447,6 @@ body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
 
 .cm-s-obsidian span.cm-formatting-quote {
     color: var(--translucent-icon-color);
-}
-
-textarea:active, input.metadata-input-text:active, input[type='date']:active, input[type='datetime-local']:active, input[type='text']:active, input[type='search']:active, input[type='email']:active, input[type='password']:active, input[type='number']:active, textarea:focus, input.metadata-input-text:focus, input[type='date']:focus, input[type='datetime-local']:focus, input[type='text']:focus, input[type='search']:focus, input[type='email']:focus, input[type='password']:focus, input[type='number']:focus, textarea:focus-visible, input.metadata-input-text:focus-visible, input[type='date']:focus-visible, input[type='datetime-local']:focus-visible, input[type='text']:focus-visible, input[type='search']:focus-visible, input[type='email']:focus-visible, input[type='password']:focus-visible, input[type='number']:focus-visible{
-	box-shadow: 0 0 0 1px var(--background-modifier-border-focus);
 }
 
 button:focus-visible {
@@ -530,6 +551,15 @@ div.notice{
 	border: 1px solid var(--light-blue) !important;
 }
 
+.cm-formatting.cm-formatting-task {
+	color: var(--translucent-dark-blue) !important;
+}
+
+.view-header-title{
+	color: var(--translucent-icon-color) !important;
+
+}
+
 a{
 	text-decoration: underline !important;
 	color: inherit !important;
@@ -538,9 +568,96 @@ a{
 	padding: 0% !important;
 }
 
+a.tag {
+	padding: 2px 9px !important;
+	box-shadow: var(--input-shadow);
+    background-color: var(--darker-blue) !important;
+	border-radius: 28px !important;
+}
+
+a.tag:hover {
+	padding: 2px 9px !important;
+	box-shadow: var(--input-shadow-hover);
+    background-color: var(--bg-color) !important;
+	border-radius: 28px !important;
+}
+
 a:hover{
 	text-decoration-color: var(--light-blue) !important;
 }
+
+.multi-select-pill{
+    background-color: var(--darker-blue) !important;
+}
+
+.multi-select-pill-content{
+	margin: 0%;
+	color: var(--text-color);
+}
+
+.multi-select-pill-remove-button{
+	margin: 0%;
+	color: var(--translucent-dark-blue) !important;
+}
+
+body:not(.is-phone) .horizontal-tab-nav-item.is-active, body:not(.is-phone) .vertical-tab-nav-item.is-active {
+    background-color: var(--highlight-color) !important;
+    color: inherit !important;
+}
+
+button.mod-cta {
+	background-color: var(--dark-blue) !important;
+	--text-color: var(--text-color) !important;
+    color: var(--text-color) !important;
+}
+
+button.mod-cta:hover {
+	background-color: var(--BLUE_E) !important;
+}
+
+textarea:active, input.metadata-input-text:active, input[type='date']:active, input[type='datetime-local']:active, input[type='text']:active, input[type='search']:active, input[type='email']:active, input[type='password']:active, input[type='number']:active, textarea:focus, input.metadata-input-text:focus, input[type='date']:focus, input[type='datetime-local']:focus, input[type='text']:focus, input[type='search']:focus, input[type='email']:focus, input[type='password']:focus, input[type='number']:focus, textarea:focus-visible, input.metadata-input-text:focus-visible, input[type='date']:focus-visible, input[type='datetime-local']:focus-visible, input[type='text']:focus-visible, input[type='search']:focus-visible, input[type='email']:focus-visible, input[type='password']:focus-visible, input[type='number']:focus-visible {
+    box-shadow: none !important;
+}
+
+.mod-warning:hover{
+	background-color: var(--highlight-quit-color) !important;
+}
+
+.mod-destructive{
+	color: var(--RED_B) !important;
+}
+
+.community-item.is-selected{
+	background-color: var(--active-bg-color) !important;
+}
+
+.flair.mod-pop{
+	box-shadow: var(--input-shadow);
+	background-color: var(--dark-blue) !important;
+	color: var(--GOLD) !important;
+}
+
+.modal-close-button:hover{
+	color: var(--light-blue) !important;
+}
+
+.cm-formatting-link {
+	color: var(--light-blue) !important;
+}
+
+.task-list-item.is-checked{
+	color: var(--translucent-icon-color) !important;
+}
+
+input[type=checkbox]:hover, input[type=checkbox]:active {
+	border-color: var(--translucent-dark-blue) !important;
+}
+
+.embedded-backlinks .tree-item-inner{
+	color: var(--text-color);
+}
+
+/* slider,graph */
 
 /* .theme-light {
 	--light-background-primary: var(--white);

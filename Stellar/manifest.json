@@ -1,8 +1,7 @@
 {
 	"name": "Stellar",
-	"version": "1.0.0",
-	"minAppVersion": "1.0.0",
-	"author": "@Noot",
-	"authorUrl": "https://x.com/0001No2",
+	"version": "0.0.3",
+	"author": "Noot",
+	"authorUrl": "https://github.com/Noot-cat",
 	"fundingUrl": "https://buymeacoffee.com/Nootcoffee"
 }
