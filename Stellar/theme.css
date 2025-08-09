@@ -662,6 +662,11 @@ input[type=checkbox]:hover, input[type=checkbox]:active {
 	text-decoration: none !important;
 }
 
+.internal-link.is-unresolved, .markdown-rendered .internal-link.is-unresolved {
+    color: inherit !important;
+    opacity: 1 !important;
+}
+
 /* slider,graph */
 
 /* .theme-light {
