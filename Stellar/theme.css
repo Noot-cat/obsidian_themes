@@ -583,7 +583,7 @@ a.tag:hover {
 }
 
 a:hover{
-	text-decoration-color: var(--light-blue) !important;
+	text-decoration-color: var(--GOLD) !important;
 }
 
 .multi-select-pill{
@@ -665,6 +665,10 @@ input[type=checkbox]:hover, input[type=checkbox]:active {
 .internal-link.is-unresolved, .markdown-rendered .internal-link.is-unresolved {
     color: inherit !important;
     opacity: 1 !important;
+}
+
+.is-warning{
+	color: var(--RED_B) !important;
 }
 
 /* slider,graph */
