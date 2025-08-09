@@ -255,6 +255,14 @@
 	--font-adaptive-smallest: 11px;
 }
 
+.metadata-property-key, .multi-select-container:focus-within, .multi-select-container:active, .multi-select-container:hover, .multi-select-container:focus {
+    background-color: var(--darker-blue) !important;
+}
+
+.multi-select-pill::after {
+	box-shadow: none !important;
+}
+
 .nav-buttons-container {
     justify-content: flex-start;
 }
