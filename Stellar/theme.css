@@ -671,6 +671,10 @@ input[type=checkbox]:hover, input[type=checkbox]:active {
 	color: var(--RED_B) !important;
 }
 
+.token.punctuation {
+	color: var(--light-blue);
+}
+
 /* slider,graph */
 
 /* .theme-light {
