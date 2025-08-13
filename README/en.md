@@ -23,4 +23,4 @@ The Stellar theme provides a beautiful dark, blue-ish color scheme for Obsidian.
 
 ## Contributing
 
-Contributions are welcome! If you have any suggestions, find any bugs, or want to improve the theme, please feel free to open an issue or create a pull request on the [GitHub repository](https://github.com/your-username/stellar-theme).
+Contributions are welcome! If you have any suggestions, find any bugs, or want to improve the theme, please feel free to open an issue or create a pull request on the [GitHub repository](https://github.com/Noot-cat/obsidian_themes).
