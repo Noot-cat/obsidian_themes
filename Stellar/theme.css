@@ -129,6 +129,10 @@
   --text-color: #C6D0F5;
   --quit-color: #fc635542;
   --highlight-quit-color: #fc635563;
+  --gold: var(--GOLD);
+  --silver: #C0C7D1;
+  --purple: #A78BFA;
+  --midnight-blue: #001E43;
   --stellar-tab-text-color: var(--translucent-icon-color);
   --stellar-tab-text-color-active: var(--BLUE_B);
 }
@@ -138,11 +142,15 @@
    ========================================================================== */
 
 .theme-dark {
+  /* Background */
   --background-primary: var(--bg-color);
   --background-primary-alt: var(--bg-color);
   --background-secondary: var(--bg-color);
   --background-secondary-alt: var(--bg-color);
+
   --divider-color: var(--light-blue);
+
+  /* Scrollbar */
   --scrollbar-thumb-bg: var(--translucent-dark-blue);
   --scrollbar-active-thumb-bg: var(--light-blue);
   --status-bar-text-color: var(--translucent-white);
@@ -765,4 +773,33 @@ input[type="checkbox"]:active {
 
 .token.punctuation {
   color: var(--light-blue);
+}
+
+/* Code Block */
+.cm-formatting.cm-formatting-code-block.cm-hmd-codeblock {
+  color: var(--translucent-dark-blue);
+}
+
+.token.doctype-tag,
+.token.name,
+.token.tag,
+.token.keyword {
+  color: var(--light-blue);
+}
+
+
+.cm-meta {
+  color: var(--light-blue);
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.inserted {
+  color: var(--gold);
+}
+
+.token.attr-value {
+  color: var(--TEAL);
 }

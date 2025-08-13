@@ -49,8 +49,33 @@ H~2~O (= H<sub>2</sub>O)
 This is a sample code. `git commit -m'text'`
 
 This is a sample code block.
-```py
+```python
 print('Hello World!')
+```
+
+```html
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>title</title> 
+	</head> 
+	<body> 
+		<h1>Hello World!</h1>
+		<p>sample</p> 
+	</body> 
+</html> 
+```
+
+```css
+h1{
+	color: #00ccff;
+}
+
+.a{
+	color: #ff0000;
+}
 ```
 
 ***
@@ -67,7 +92,13 @@ $$
 
 ***
 
+# [[md sample]]
+
 [manim-color](https://docs.manim.community/en/stable/reference/manim.utils.color.manim_colors.html#module-manim.utils.color.manim_colors)
+
+[[README]]
+
+Tag: #tag
 
 ***
 
