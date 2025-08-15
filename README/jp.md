@@ -23,4 +23,4 @@ Stellarテーマは、Obsidianに美しいダークで青みがかった配色�
 
 ## 貢献
 
-貢献を歓迎します！提案、バグの発見、テーマの改善をしたい場合は、お気軽に[GitHubリポジトリ](https://github.com/Noot-cat/obsidian_themes)でissueを開くか、プルリクエストを作成してください。
+貢献を歓迎します！提案、バグの発見、テーマの改善をしたい場合は、お気軽に[GitHubリポジトリ](https://github.com/Noot-cat/obsidian_themes)でissueを開くか、プルリクエストを作成するか、`Noot.cat.contact@gmail.com`までご連絡ください。

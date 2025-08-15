@@ -27,7 +27,7 @@ The Stellar theme provides a beautiful dark, blue-ish color scheme for Obsidian.
 
 ## Contributing
 
-Contributions are welcome! If you have any suggestions, find any bugs, or want to improve the theme, please feel free to open an issue or create a pull request on the [GitHub repository](https://github.com/Noot-cat/obsidian_themes).
+Contributions are welcome! If you have any suggestions, find any bugs, or want to improve the theme, please feel free to open an issue or create a pull request on the [GitHub repository](https://github.com/Noot-cat/obsidian_themes) or `Noot.cat.contact@gmail.com`.
 
 ---
 
@@ -56,4 +56,4 @@ Stellarテーマは、Obsidianに美しいダークで青みがかった配色�
 
 ## 貢献
 
-貢献を歓迎します！提案、バグの発見、テーマの改善をしたい場合は、お気軽に[GitHubリポジトリ](https://github.com/Noot-cat/obsidian_themes)でissueを開くか、プルリクエストを作成してください。
+貢献を歓迎します！提案、バグの発見、テーマの改善をしたい場合は、お気軽に[GitHubリポジトリ](https://github.com/Noot-cat/obsidian_themes)でissueを開くか、プルリクエストを作成するか、`Noot.cat.contact@gmail.com`までご連絡ください。
